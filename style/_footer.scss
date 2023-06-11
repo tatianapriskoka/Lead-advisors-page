@@ -1,0 +1,72 @@
+.footer__form {
+    padding: 50px 40px 50px 40px;
+
+
+    @include tablet {
+        padding: 60px 25% 60px 25%;
+    }
+
+    @include laptop {
+        padding: 60px 30% 60px 30%;
+    }
+
+    @include lagedesk {
+        padding: 61px 40% 72px 40%;
+    }
+}
+
+.footer {
+    background: $darkblue;
+    min-height: 141px;
+    object-fit: cover;
+    background-size: cover;
+    min-width: 500px;
+
+
+    &__input {
+        min-width: 280px;
+        height: 41px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 40px;
+        border: none;
+        padding-right: 100px;
+        padding-left: 10px;
+        position: absolute;
+
+
+        @include tablet {
+            width: 360px;
+            height: 41px;
+            padding-right: 10px;
+        }
+
+        @include lagedesk {
+            width: 440px;
+            height: 59px;
+        }
+    }
+
+}
+
+.footer__button {
+    width: 33px;
+    height: 33px;
+    position: relative;
+    left: 20em;
+    top: 5px;
+    vertical-align: middle;
+    background-image: url('/images/button-red.svg');
+    background-repeat: no-repeat;
+
+    @include lagedesk {
+        width: 43px;
+        height: 43px;
+        left: 26em;
+        top: 10px;
+    }
+}
+
+.footer__input._error {
+    background-color: rgb(239, 173, 173);
+}

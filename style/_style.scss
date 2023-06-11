@@ -1,0 +1,66 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Poppins';
+    font-weight: 400;
+    background-color: $background;
+    color: $darkblue;
+    line-height: 1.5;
+    font-size: 16px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    @include tablet {
+        padding-left: 175px;
+        padding-right: 174px;
+    }
+
+    @include laptop {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+
+    @include desktop {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    @include lagedesk {
+        padding-left: 541px;
+        padding-right: 541px;
+    }
+}

@@ -1,0 +1,28 @@
+$background: #F5F5F5;
+$darkblue: #162C4E;
+$blue: #1D4169;
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+
+@mixin lagedesk {
+    @media (min-width:1600px) {
+        @content;
+    }
+}
